@@ -1,6 +1,6 @@
 cask "packageflow" do
   version "0.1.0"
-  sha256 "801683672b5b545f8df6c9ba3497d2f931bebf83f10c35be8d1dab4c95dcd975"
+  sha256 "2a72c94cc083162167b306d132d933d98f7d9e2b2d1502580fef139bd2cf74a2"
 
   url "https://github.com/runkids/PackageFlow/releases/download/v#{version}/PackageFlow_#{version}_aarch64.dmg"
   name "PackageFlow"
