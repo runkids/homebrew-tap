@@ -1,10 +1,10 @@
 cask "packageflow" do
-  version "0.3.0"
-  sha256 "8de5e1c0109c71be7d02159ce12889b5e39f44cbb1ca79a5edcd8e4e1dd4b4ce"
+  version "0.3.1"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
 
   url "https://github.com/runkids/PackageFlow/releases/download/v#{version}/PackageFlow_#{version}_aarch64.dmg"
   name "PackageFlow"
-  desc "The AI-Driven package.json Project Manager Turn scripts, Git, workflows, deploys, and MCP tools into one-click actions."
+  desc "Developer workflow management tool for frontend and Node.js projects"
   homepage "https://github.com/runkids/PackageFlow"
 
   depends_on macos: ">= :catalina"
