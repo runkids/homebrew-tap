@@ -5,21 +5,21 @@
 class Skillshare < Formula
   desc "Share skills across AI CLI tools"
   homepage "https://github.com/runkids/skillshare"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/runkids/skillshare/releases/download/v0.6.0/skillshare_0.6.0_darwin_amd64.tar.gz"
-      sha256 "a73b49319892f0e26227ae869234baee802000106eb37a91ce557353db073537"
+      url "https://github.com/runkids/skillshare/releases/download/v0.6.1/skillshare_0.6.1_darwin_amd64.tar.gz"
+      sha256 "0284a5de5e36f9337a584ca436551bb3cb894d678911dec626326907a231875a"
 
       def install
         bin.install "skillshare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/skillshare/releases/download/v0.6.0/skillshare_0.6.0_darwin_arm64.tar.gz"
-      sha256 "bde3acde953e3920212e4c0be59e24a746b777072337dfabc863a901afad235c"
+      url "https://github.com/runkids/skillshare/releases/download/v0.6.1/skillshare_0.6.1_darwin_arm64.tar.gz"
+      sha256 "6d1435379fe6bdb458f552f7c35dd76e7df85812e5a9e02070b8b68e989dfb38"
 
       def install
         bin.install "skillshare"
@@ -29,15 +29,15 @@ class Skillshare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runkids/skillshare/releases/download/v0.6.0/skillshare_0.6.0_linux_amd64.tar.gz"
-      sha256 "741100ab19e11dfb1ff7a2f69f38bb9a1784ed5e7b46a306cfaa41a68f1e0544"
+      url "https://github.com/runkids/skillshare/releases/download/v0.6.1/skillshare_0.6.1_linux_amd64.tar.gz"
+      sha256 "0303aeb7f17d1d0c0f75f0cd60f4bed82d8541bec7a416813bd690cf812bc974"
       def install
         bin.install "skillshare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runkids/skillshare/releases/download/v0.6.0/skillshare_0.6.0_linux_arm64.tar.gz"
-      sha256 "5faee24042c940fbc5dbfa594d50cc3911517121d1d8f3736375893e3c68acdb"
+      url "https://github.com/runkids/skillshare/releases/download/v0.6.1/skillshare_0.6.1_linux_arm64.tar.gz"
+      sha256 "920d7f249e4e1f05dd77cc392b5890999ef627ab59a82c01dc58d989096e8c2e"
       def install
         bin.install "skillshare"
       end
