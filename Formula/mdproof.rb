@@ -1,26 +1,26 @@
 class Mdproof < Formula
   desc "Markdown-native test runner — write tests as Markdown, run them as real tests"
   homepage "https://github.com/runkids/mdproof"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/mdproof/releases/download/v0.0.2/mdproof-v0.0.2-darwin-arm64.tar.gz"
-      sha256 "1e83a6fcacb163f607a1f35dedbd299b0c4717838a0b62ff2d61679005a35ef1"
+      url "https://github.com/runkids/mdproof/releases/download/v0.0.3/mdproof-v0.0.3-darwin-arm64.tar.gz"
+      sha256 "784d70038709e3e2933549829d50ed87634ee7af721ab80ed397a7296bd5c5fd"
     else
-      url "https://github.com/runkids/mdproof/releases/download/v0.0.2/mdproof-v0.0.2-darwin-amd64.tar.gz"
-      sha256 "ef9805f0f336b8943e6d26addd817fea74cf3a075e1515f1a81f1ef02ffad6f1"
+      url "https://github.com/runkids/mdproof/releases/download/v0.0.3/mdproof-v0.0.3-darwin-amd64.tar.gz"
+      sha256 "8f8679d18dda42a3fb035568d376a979960c3464e5994477b845d83316d66cfd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/mdproof/releases/download/v0.0.2/mdproof-v0.0.2-linux-arm64.tar.gz"
-      sha256 "d07de7cc47dec12f3c182dc8b08a7b7e584c553bbc441beb0e795dad9dfa0fef"
+      url "https://github.com/runkids/mdproof/releases/download/v0.0.3/mdproof-v0.0.3-linux-arm64.tar.gz"
+      sha256 "0a718f7aaafa27de5c04913cbbcf809a64189731b0c9fd33d1c1c28d3867342a"
     else
-      url "https://github.com/runkids/mdproof/releases/download/v0.0.2/mdproof-v0.0.2-linux-amd64.tar.gz"
-      sha256 "16efca374ce8de272ffd4023f052d155ec5531e92a96d1c457b90d267eb0ede7"
+      url "https://github.com/runkids/mdproof/releases/download/v0.0.3/mdproof-v0.0.3-linux-amd64.tar.gz"
+      sha256 "9d6446f5b96e6a3d4d8ea6924483aa921e701d02418ed03c50015698c96703d8"
     end
   end
 
