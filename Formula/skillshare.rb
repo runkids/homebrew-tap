@@ -5,21 +5,21 @@
 class Skillshare < Formula
   desc "Share skills across AI CLI tools"
   homepage "https://github.com/runkids/skillshare"
-  version "0.20.17"
+  version "0.20.18"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/runkids/skillshare/releases/download/v0.20.17/skillshare_0.20.17_darwin_amd64.tar.gz"
-      sha256 "1c7dc1507086e7b5a86c8a154e53ee5d4ddea62db713deb7889ea5a0c2ae001b"
+      url "https://github.com/runkids/skillshare/releases/download/v0.20.18/skillshare_0.20.18_darwin_amd64.tar.gz"
+      sha256 "2c2e84d6a2b526bc286907afe94ad583de256723b5e2875f0d2fcb7f7b152e31"
 
       define_method(:install) do
         bin.install "skillshare"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/skillshare/releases/download/v0.20.17/skillshare_0.20.17_darwin_arm64.tar.gz"
-      sha256 "74b150478b67f9c9dd2b3f4c160232ec3626063ad53ff17724e590ea759ae746"
+      url "https://github.com/runkids/skillshare/releases/download/v0.20.18/skillshare_0.20.18_darwin_arm64.tar.gz"
+      sha256 "3101812d429fe9d357861d9ed4e496a3271eaffd1514d7a5cd35eaf3f58f3c4d"
 
       define_method(:install) do
         bin.install "skillshare"
@@ -29,15 +29,15 @@ class Skillshare < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runkids/skillshare/releases/download/v0.20.17/skillshare_0.20.17_linux_amd64.tar.gz"
-      sha256 "07bcf43d8a26c6917094badf8d8810f5b18365bb06ce8ab1ac3bab03c4909242"
+      url "https://github.com/runkids/skillshare/releases/download/v0.20.18/skillshare_0.20.18_linux_amd64.tar.gz"
+      sha256 "61000dde17e5925f4d65992e44ce69ae3b74d7a7c832856c612d635d538c17be"
       define_method(:install) do
         bin.install "skillshare"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/runkids/skillshare/releases/download/v0.20.17/skillshare_0.20.17_linux_arm64.tar.gz"
-      sha256 "7b4f87b037947dcc66078f9f937c4c1d1814b468d785f493ca09f9e804a86ee1"
+      url "https://github.com/runkids/skillshare/releases/download/v0.20.18/skillshare_0.20.18_linux_arm64.tar.gz"
+      sha256 "47277d06bfa63e303bc6b8a2b1987a11a476cd34e749e9837f15734ca92eeed9"
       define_method(:install) do
         bin.install "skillshare"
       end
