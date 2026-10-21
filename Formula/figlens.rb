@@ -1,26 +1,26 @@
 class Figlens < Formula
   desc "Read Figma .fig files offline: REST nodes, variables, assets, renders and design bundles"
   homepage "https://github.com/runkids/figlens"
-  version "0.1.2"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/figlens/releases/download/v0.1.2/figlens-0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "fdca53d3e5f1b0b9ab094704e94299a1e195d4dfed69d7c960d8f4678b23b1a0"
+      url "https://github.com/runkids/figlens/releases/download/v0.2.0/figlens-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "1c0a7b6d2d36a75b2aeb3cb75975017a97c0f2d8eec6abd9a15d0c58db69f774"
     else
-      url "https://github.com/runkids/figlens/releases/download/v0.1.2/figlens-0.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "3edee05c4ee2c12bad7d27c00bb8998620467b290049b1d2012e05f349e0b584"
+      url "https://github.com/runkids/figlens/releases/download/v0.2.0/figlens-0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "37544eac6a0c6136e53ecc28ba6510dbcee11986266b33875f981b6dfa722a21"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/figlens/releases/download/v0.1.2/figlens-0.1.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "db06a3c6414f5b424602d440efdcf8f60638ab76e75cfe227995c0b5abd8645b"
+      url "https://github.com/runkids/figlens/releases/download/v0.2.0/figlens-0.2.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "ad167023231f1c60e81ae8bb1dd1e91f4639a522dc31c569e735454396ba5254"
     else
-      url "https://github.com/runkids/figlens/releases/download/v0.1.2/figlens-0.1.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "12365ebc7af85414a83d41b056025a20660147d6cc78189f8babc022df9fe607"
+      url "https://github.com/runkids/figlens/releases/download/v0.2.0/figlens-0.2.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "dbf33d208a3f09bb30de0eb78286fac77bd47d0e9bb7faa07023425557167942"
     end
   end
 
