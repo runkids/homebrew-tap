@@ -1,6 +1,6 @@
 cask "skillshare-app" do
-  version "0.7.6"
-  sha256 "a4587a93224dfb7fb21ab60b5aa35f56a41700ef70fdb374c158b81e0244eaab"
+  version "0.7.7"
+  sha256 "ad2af305274b6110c6a098fe0d327ad8ae234ce75cf9b51f7b40a81c54355da5"
 
   url "https://github.com/runkids/skillshare-app/releases/download/v#{version}/skillshare_#{version}_aarch64.dmg"
   name "Skillshare App"
