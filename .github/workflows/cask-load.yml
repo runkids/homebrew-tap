@@ -1,0 +1,31 @@
+name: Load skillshare-app cask
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  cask-load:
+    runs-on: macos-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update Homebrew
+        run: brew update
+
+      - name: Load skillshare-app without installing
+        env:
+          HOMEBREW_DEVELOPER: '1'
+          HOMEBREW_NO_AUTO_UPDATE: '1'
+        run: |
+          brew ruby -e '
+            require "cask/cask_loader"
+            cask = Cask::CaskLoader.load(File.expand_path("Casks/skillshare-app.rb"))
+            puts "Loaded #{cask.token} #{cask.version}"
+          '
