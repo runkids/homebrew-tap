@@ -7,8 +7,6 @@ cask "skillshare-app" do
   desc "Desktop GUI for Skillshare CLI"
   homepage "https://github.com/runkids/skillshare-app"
 
-  depends_on macos: ">= :catalina"
-
   app "skillshare.app"
 
   zap trash: [
