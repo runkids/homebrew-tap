@@ -1,26 +1,26 @@
 class Figlens < Formula
   desc "Figma screens for coding agents, with no Figma app, login or API limit"
   homepage "https://figlens.runkids.cc"
-  version "0.14.6"
+  version "0.14.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/figlens/releases/download/v0.14.6/figlens-0.14.6-aarch64-apple-darwin.tar.gz"
-      sha256 "626e125885775c64289ae97101641b7aeca576c46a38b03de40eca4352949648"
+      url "https://github.com/runkids/figlens/releases/download/v0.14.7/figlens-0.14.7-aarch64-apple-darwin.tar.gz"
+      sha256 "38416f30b76f89e7179bc97016a6524b93651e62a8df181113536a1fe650f0a9"
     else
-      url "https://github.com/runkids/figlens/releases/download/v0.14.6/figlens-0.14.6-x86_64-apple-darwin.tar.gz"
-      sha256 "1703834a1bc0f484bb050abd03045cb4a1dc75af646346347ceeaa322833a564"
+      url "https://github.com/runkids/figlens/releases/download/v0.14.7/figlens-0.14.7-x86_64-apple-darwin.tar.gz"
+      sha256 "46d2612a3d53d3ba7540c70c8a4988aa9391cafdeb463b0a2802eed0590534aa"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/runkids/figlens/releases/download/v0.14.6/figlens-0.14.6-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4c1c1889277ed7c5156bfd9215045b6e8fcf04e869b22ccd29a449728271b327"
+      url "https://github.com/runkids/figlens/releases/download/v0.14.7/figlens-0.14.7-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "29a4dbabe2b52a7afbe3ad6e15149c7485826d00b0686fe95dc4f6fae5ecc111"
     else
-      url "https://github.com/runkids/figlens/releases/download/v0.14.6/figlens-0.14.6-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "8effd1645a66d08b5689ded99d4afb8e0bd6ed1b7907215c23c0a7f4d4a4932c"
+      url "https://github.com/runkids/figlens/releases/download/v0.14.7/figlens-0.14.7-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "52a23b64a828e2f87af487c4d4e780966ad553ca7410ad28ae38fd0ce2efabee"
     end
   end
 
